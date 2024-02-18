@@ -85,7 +85,7 @@ button:hover
 .list-container ul li 
 {
     list-style: none;
-    padding: 10px 0;
+    padding: 10px 50px;
     font-weight: bold;
     position: relative;
 }
@@ -96,11 +96,11 @@ ul li::before
     position: absolute;
     height: 28px;
     width: 28px;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     background-image: url(images/unchecked.png);
     background-size: cover;
     background-position: center;
-    left: -40px;
+    left: 10px;
     bottom: 5px;
     cursor: pointer;
 }
@@ -113,4 +113,4 @@ ul li.item
 ul li.item::before
 {
     background-image: url(images/checked.png);
-} */
+} 
