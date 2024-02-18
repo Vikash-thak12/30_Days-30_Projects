@@ -1,20 +1,29 @@
-body 
+* 
 {
-    height: 100vh;
-    width: 100%;
-    background: linear-gradient(135deg, #153677, #4e085f);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .container
 {
-    background-color: white;
+
+    background: linear-gradient(135deg, #153677, #4e085f);
+    height: 100vh;
+    width: 100%;
+    padding: 10px;
+}
+
+.to-do
+{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 540px;
+    background-color: rgb(188, 172, 172);
     border-radius: 20px;
-    width: 400px;
-    min-height: 60vh;
     padding: 20px;
 }
 .box 
@@ -32,17 +41,19 @@ body
 
 .Inbtn
 {
-    width: auto;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgb(188, 182, 182);
+    background-color: rgb(151, 143, 143);
+    color: black;
     border-radius: 25px;
-    margin-bottom: 10px;
+    margin: 10px 0;
+    padding-left: 10px;
 }
 
 input{
-    padding: 10px;
+    padding-left: 10px;
     border-radius: 20px;
     border: none;
     outline: none;
@@ -57,7 +68,8 @@ button
     border-radius: 30px;
     border: none;
     outline: none;
-    background: #ff5945;
+    background: #270501;
+    color: white;
     font-size: 15px;
     font-weight: bold;
     cursor: pointer;
@@ -65,14 +77,10 @@ button
 
 button:hover 
 {
-    background-color: aqua;
+    background-color: rgb(80, 221, 221);
+    color: black;
 }
 
-.list-container
-{
-    /* background-color: #979eab; */
-    border-radius: 20px;
-}
 
 .list-container ul li 
 {
@@ -105,4 +113,4 @@ ul li.item
 ul li.item::before
 {
     background-image: url(images/checked.png);
-}
+} */
