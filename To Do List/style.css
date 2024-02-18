@@ -25,6 +25,8 @@
     background-color: rgb(188, 172, 172);
     border-radius: 20px;
     padding: 20px;
+    min-height: 80vh;
+    overflow: hidden;
 }
 .box 
 {
@@ -88,6 +90,7 @@ ul li
     font-weight: bold;
     position: relative;
     font-size: 20px;
+    cursor: pointer;
 }
 
 ul li span 
@@ -95,12 +98,19 @@ ul li span
     position: absolute;
     right: 0;
     top: 7px;
-    width: 40px;
-    height: 40px;
-    font-size: 25px;
-
+    width: 30px;
+    height: 30px;
+    font-size: 28px;
+    text-align: center;
+    cursor: pointer;
 }
 
+ul li span:hover
+{
+    background-color: #270501;
+    border-radius: 50%;
+    color: white;
+}
 ul li::before
 {
     content: '';
