@@ -22,6 +22,7 @@ body
     width: 100%;
     display: flex;
     align-items: center;
+    gap: 5px;
     
 }
 .box img 
@@ -37,6 +38,7 @@ body
     justify-content: space-between;
     background-color: rgb(188, 182, 182);
     border-radius: 25px;
+    margin-bottom: 10px;
 }
 
 input{
@@ -64,4 +66,43 @@ button
 button:hover 
 {
     background-color: aqua;
+}
+
+.list-container
+{
+    /* background-color: #979eab; */
+    border-radius: 20px;
+}
+
+.list-container ul li 
+{
+    list-style: none;
+    padding: 10px 0;
+    font-weight: bold;
+    position: relative;
+}
+
+ul li::before
+{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    left: -40px;
+    bottom: 5px;
+    cursor: pointer;
+}
+
+ul li.item
+{
+    color: #555;
+    text-decoration: line-through;
+}
+ul li.item::before
+{
+    background-image: url(images/checked.png);
 }
