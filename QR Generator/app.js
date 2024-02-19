@@ -11,5 +11,17 @@ function generateQr() {
     } else 
     {
         qrText.classList.add("error")
+        setTimeout(() => {
+            qrText.classList.remove("error")
+        },1000);
     }
 }
+
+// Adding an event listener for keypress event on the input field
+qrText.addEventListener("keypress", function(event) {
+    // Check if the key pressed is Enter (key code 13)
+    if (event.keyCode === 13) {
+        // Call the generateQr function when Enter key is pressed
+        generateQr();
+    }
+});
