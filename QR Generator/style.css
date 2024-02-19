@@ -20,10 +20,11 @@ body
     color: white;
 }
 input{
-    width: 100%;
+    width: calc(100% - 20px);
     padding: 10px;
+    text-align: start;
     border: 1px solid black;
-    margin: 10px 0;
+    margin: 10px 0 20px;
     border: none;
     border-radius: 20px;
     height: 40px;
@@ -33,14 +34,25 @@ input{
     font-weight: bold;
 
 }
+
+
 button
 {
-    width: 200px;
+    width: 100%;
     padding: 15px;
-    border-radius: 30px;
-    margin: 10px 0;
+    border-radius: 20px;
+    margin: 20px 0;
     font-size: 1.4rem;
     font-weight: bold;
     text-align: center;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: aqua;
 
+}
+
+button:hover
+{
+    background-color: rgb(19, 147, 147);
 }
