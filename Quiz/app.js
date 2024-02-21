@@ -200,7 +200,10 @@ function selectanswer(e) {
 }
 
 function showScore() {
-
+    ResetFn();
+    questionElement.innerHTML = `You scored ${score} out of ${questions.length}`;
+    nextBtn.innerHTML = "Play Again";
+    nextBtn.style.display = "block";
 }
 
 function handleNextques() {
