@@ -183,11 +183,11 @@ function ResetFn() {
 
 function selectanswer(e) {
     const selectedBtn = e.target;
-    const iscorrect = correctedBtn.dataset.correct === true;
+    const iscorrect = selectedBtn.dataset.correct === "true";
     if (iscorrect) {
         selectedBtn.classList.add("correct");
     } else {
-        selectedBtn.classList.remove("incorrect");
+        selectedBtn.classList.add("incorrect");
     }
 }
 

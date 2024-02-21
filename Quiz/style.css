@@ -54,8 +54,13 @@ body{
 
 .btn:hover
 {
-    background-color: #99713c;
-    transition: .3s ease-in-out;
+    /* background-color: #99713c; */
+    /* transition: .3s ease-in-out; */
+}
+
+btn:active
+{
+    transform: scale(1.4);
 }
 
 #next-btn
@@ -76,4 +81,12 @@ body{
 {
     background-color: rgb(56, 100, 100);
     color: white;
+}
+.correct 
+{
+    background-color: green;
+}
+.incorrect 
+{
+    background-color: red;
 }
