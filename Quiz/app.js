@@ -186,6 +186,7 @@ function selectanswer(e) {
     const iscorrect = selectedBtn.dataset.correct === "true";
     if (iscorrect) {
         selectedBtn.classList.add("correct");
+        score++;
     } else {
         selectedBtn.classList.add("incorrect");
     }
@@ -198,4 +199,26 @@ function selectanswer(e) {
     nextBtn.style.display = "block";
 }
 
+function showScore() {
+
+}
+
+function handleNextques() {
+    currentQuestionIndex++;
+    if(currentQuestionIndex < questions.length) {
+        showQuestion();
+    } else 
+    {
+        showScore();
+    }
+}
+
+nextBtn.addEventListener("click", () => {
+    if(currentQuestionIndex < questions.length) {
+        handleNextques();
+    } else 
+    {
+        startQuiz();
+    }
+})
 startQuiz();
