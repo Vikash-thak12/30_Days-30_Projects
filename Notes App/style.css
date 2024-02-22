@@ -49,3 +49,27 @@ button img
     width: 24px;
     color: black;
 }
+
+.input-box
+{
+    position: relative;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 350px;
+    min-height: 250px;
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+p img 
+{
+    width: 25px;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}
