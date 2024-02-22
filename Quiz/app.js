@@ -151,7 +151,7 @@ let score = 0;
 function startQuiz() {
     currentQuestionIndex = 0;
     score = 0;
-    nextBtn.innerHTML = "Click to the next Question:";
+    // nextBtn.innerHTML = "Click to the next Question:";
     showQuestion();
 
 }
