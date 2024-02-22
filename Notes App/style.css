@@ -27,6 +27,16 @@ h2
     font-size: 2.3rem;
     gap: 10px;
 }
+
+.note-container
+{
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    gap: 10px;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
 button
 {
     margin-top: 20px;
@@ -55,8 +65,8 @@ button img
     position: relative;
     margin-top: 20px;
     width: 100%;
-    max-width: 350px;
-    min-height: 150px;
+    max-width: 325px;
+    min-height: 200px;
     background-color: white;
     color: black;
     padding: 10px 20px;
