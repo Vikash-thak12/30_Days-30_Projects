@@ -54,7 +54,7 @@ body{
 }
 .container blockquote::after 
 {
-    content: ' ”';
+    content: '”';
 }
 
 
