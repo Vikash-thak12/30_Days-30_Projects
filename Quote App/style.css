@@ -26,13 +26,33 @@ body{
 {
     margin-bottom: 20px;
 }
-.main{
-    margin: 20px 0;
+
+.container blockquote
+{
+    width: 100%;
+    min-height: 120px;
+    font-weight: bold;
+    font-size: 1.1rem;
 }
-.main p 
+.container blockquote::before, .container blockquote::after
+{
+    content: '"';
+}
+
+.container span
 {
     font-weight: bold;
-    font-size: 1.4rem;
+    font-size: 1.1rem;
+    display: block;
+    margin-top: 10px;
+    float: right;
+    position: relative;
+}
+
+.container span::before
+{
+    content: '';
+    background-color: ;
 }
 .btn img
 {
