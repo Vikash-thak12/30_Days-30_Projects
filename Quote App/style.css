@@ -4,10 +4,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-color: gray;
+}
 
 .container
 {
-    background-color: #676060;
+    background-color: white;
     width: 90%;
     max-width: 500px;
     padding: 20px;
@@ -34,6 +37,7 @@
 .btn img
 {
     width: 30px;
+    margin-right: 10px;
 }
 .btn
 {
@@ -45,13 +49,22 @@
 }
 button
 {
-    width: 100px;
+    width: 130px;
     height: 50px;
+    background: rgb(23, 124, 129);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 50px;
-    border: none;
+    border: 1px solid rgb(23, 124, 129);
     outline: none;
     cursor: pointer;
     font-weight: bold;
-    font-size: 1.5rem;
-    text-align: center;
+    font-size: 1rem;
+}
+
+button:nth-child(2) {
+    background: transparent;
+    color: black;
 }
