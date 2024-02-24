@@ -50,7 +50,7 @@ body{
 }
 .container blockquote::before, .container blockquote::after
 {
-    content: '"';
+    content: '€';
 }
 
 .container span
