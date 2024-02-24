@@ -48,10 +48,15 @@ body{
     font-weight: bold;
     font-size: 1.1rem;
 }
-.container blockquote::before, .container blockquote::after
+.container blockquote::before
 {
-    content: '€';
+    content: '“ ';
 }
+.container blockquote::after 
+{
+    content: ' ”';
+}
+
 
 .container span
 {
