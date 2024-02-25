@@ -25,10 +25,15 @@
             <img src="music.jpg" alt="">
             <h1>Vikash</h1>
             <p>Let's Play the music...</p>
-            <input type="range" type="0" id="progress">
+            <audio id="song">
+                <source src="media/AP Dhillon Mashup.mp3" type="audio/mpeg">
+            </audio>
+
+            <input type="range" value="0" id="progress">
+
             <div class="buttons">
                 <div><i class="fa-solid fa-backward"></i></div>
-                <div><i class="fa-solid fa-play"></i></div>
+                <div id="play-btn"><i class="fa-solid fa-play" id="play"></i></div>
                 <div><i class="fa-solid fa-forward"></i></div>
             </div>
         </div>
