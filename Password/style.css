@@ -1,8 +1,12 @@
+body 
+{
+    background-color: aquamarine;
+}
 .container
 {
     width: 90%;
-    max-width: 500px;
-    background-color: aqua;
+    max-width: 350px;
+    background-color: #fff;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -10,4 +14,21 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    padding: 10px 15px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+img{
+    width: 30px;
+    cursor: pointer;
+}
+
+.container input
+{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 20px;
 }
