@@ -27,10 +27,11 @@ body{
 
 .container img 
 {
-    width: 50px;
+    width: 56px;
     cursor: pointer;
     border: 3px solid rgb(105, 79, 79);
     border-radius: 50%;
+    padding: 5px;
     box-shadow: 6px 1px 23px  #435672;
     transition: transform .2s ease-in-out;
 }
