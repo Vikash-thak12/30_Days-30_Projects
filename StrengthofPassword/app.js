@@ -13,11 +13,12 @@ password.addEventListener("input", () => {
     if(password.value.length < 4) {
         str.innerHTML = "Weak";
         message.style.color = "#ff5925"
-        bor.style.bordercolor = "#ff5925"
+        bor.style.borderColor = "#ff5925"
+        
     } else if(password.value.length >= 4 && password.value.length < 8) {
         str.innerHTML = "medium"
         message.style.color = "yellow"
-        bor.style.bordercolor = "yellow"
+        bor.style.borderColor = "yellow"
 
     } else 
     {
