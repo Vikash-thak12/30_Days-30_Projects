@@ -5,3 +5,6 @@ var secs = document.querySelector("#secs");
 var getTime = new Date();
 
 console.log(getTime);
+hrs.innerHTML = getTime.getHours();
+mins.innerHTML = getTime.getMinutes();
+secs.innerHTML = getTime.getSeconds();
