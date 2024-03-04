@@ -12,6 +12,58 @@
     background: url(images/background.png);
     background-position: center;
     background-size: cover;
+    padding: 10px;
+    position: relative;
     
-    
+}
+
+.logo
+{
+    width: 200px;
+    padding: 30px;
+    cursor: pointer;
+}
+
+.content
+{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+}
+
+.content p
+{
+    font-size: 1.5rem;
+    font-weight: bold;
+
+}
+
+.content h1
+{
+    font-size: 3rem;
+}
+
+.content span{
+    color: rgb(185, 149, 82);
+}
+
+button
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    background: transparent;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+}
+
+button img{
+    width: 20px;
 }
