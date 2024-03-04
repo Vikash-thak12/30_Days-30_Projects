@@ -69,3 +69,18 @@ button
 button img{
     width: 20px;
 }
+
+.launching-time
+{
+    display: flex;
+    margin: 20px 0;
+}
+
+.launching-time p
+{
+    font-size: 2.5rem;
+}
+.launching-time div
+{
+    flex-basis: 90px;
+}
