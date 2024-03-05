@@ -73,16 +73,25 @@ button img{
 .launching-time
 {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     margin: 20px 0;
 }
 
 .launching-time p
 {
     font-size: 2.5rem;
+    font-weight: bold;
+}
+.launching-time span
+{
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 .launching-time div
 {
     flex-basis: 90px;
+    text-align: center;
 }
 
 .rocket
