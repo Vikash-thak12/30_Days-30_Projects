@@ -23,4 +23,17 @@
     height: 300px;
     border: 2px dashed white;
     border-radius: 10px;
+
+}
+.list
+{
+    padding: 10px;
+    color: white;
+    gap: 40px;
+    display: flex;
+    align-items: center;
+}
+img
+{
+    width: 15px;
 }
