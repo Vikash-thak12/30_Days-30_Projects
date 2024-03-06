@@ -20,18 +20,23 @@
 .left, .right
 {
     width: 250px;
-    height: 300px;
+    height: 285px;
     border: 2px dashed white;
     border-radius: 10px;
+    overflow: hidden;
 
 }
 .list
 {
+    background-color: red;
+    width: 200px;
+    margin: 20px;
     padding: 10px;
     color: white;
     gap: 40px;
     display: flex;
     align-items: center;
+    cursor: grab;
 }
 img
 {
