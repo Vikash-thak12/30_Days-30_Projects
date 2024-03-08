@@ -43,6 +43,12 @@ textarea
     margin-bottom: 10px;
 }
 
+::placeholder
+{
+    font-size: 1.2rem;
+    color: white;
+}
+
 .lowpart
 {
     width: 100%;
@@ -74,4 +80,10 @@ select
     height: 50px;
     border-radius: 20px;
     appearance: none;
+    background: url(images/dropdown.png);
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - 10px);
+    background-position-y: 15px;
+    background-size: 20px;
+    cursor: pointer;
 }
