@@ -19,11 +19,11 @@ btn.addEventListener("click", () => {
 
 window.speechSynthesis.onvoiceschanged = () => {
     voices = window.speechSynthesis.getVoices();
-    window.voice = voices[0];
+    speech.voice = voices[0];
 
     voices.forEach((voice, i) => (select.options[i] = new Option(voice.name, i)));
 }
 
 select.addEventListener("change", () => {
-    window.voice = voices[select.value];
+    speech.voice = voices[select.value];
 })
