@@ -1,5 +1,7 @@
 var btn = document.querySelector("#btn");
 var textarea = document.querySelector("#area");
+
+let voices = [];
 var select = document.querySelector("#select");
 
 
@@ -13,3 +15,15 @@ btn.addEventListener("click", () => {
 // window.speechSynthesis.speak(speech); is a JavaScript command that instructs the browser to speak the text contained in the      SpeechSynthesisUtterance object
     window.speechSynthesis.speak(speech);
 });
+
+
+window.speechSynthesis.onvoiceschanged = () => {
+    voices = window.speechSynthesis.getVoices();
+    window.voice = voices[0];
+
+    voices.forEach((voice, i) => (select.options[i] = new Option(voice.name, i)));
+}
+
+select.addEventListener("change", () => {
+    window.voice = voices[select.value];
+})
