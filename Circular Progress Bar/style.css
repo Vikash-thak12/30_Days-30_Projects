@@ -13,12 +13,14 @@
     align-items: center;
     justify-content: center;
     background: #e3edf7;
+    position: relative;
 }
 
 .outer
 {
     height: 300px;
     width: 300px;
+    position: relative;
     /* border: 1px solid black; */
     border-radius: 50%;
     box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
@@ -50,4 +52,18 @@
 {
     font-weight: bold;
     font-size: 2rem;
+}
+
+circle
+{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 30px;
+    stroke-dasharray: 472;
+    /* stroke-dashoffset: 472; */
+}
+
+svg
+{
+    position: absolute;
 }
