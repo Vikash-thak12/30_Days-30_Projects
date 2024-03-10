@@ -55,6 +55,7 @@ nav ul li
     border-radius: 30px;
     font-size: 1.5rem;
     color: white;
+    margin-right: 60px;
 
 }
 
@@ -82,7 +83,7 @@ nav ul li
 button
 {
     padding: 10px;
-    margin-top: 20px;
+    margin-top: 50px;
     border-radius: 20px;
     height: 50px;
     color: white;
@@ -95,4 +96,35 @@ button
 
 button:hover{
     background-color: rgb(228, 153, 13);;
+}
+
+.coins 
+{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    justify-content: end;
+    padding-right: 100px;
+}
+.coin
+{
+    text-align: center;
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.coin:hover
+{
+    transform: scale(1.1);
+    transition: .3s ease-in-out;
+}
+
+.coin img
+{
+    width: 50px;
 }
