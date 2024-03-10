@@ -49,11 +49,50 @@ nav ul li
 {
     width: 100px;
     text-decoration: none;
-    padding: 5px 20px;
+    padding: 10px 20px;
     text-align: center;
     border: 2px solid white;
     border-radius: 30px;
     font-size: 1.5rem;
     color: white;
 
+}
+
+.firstPart
+{
+    width: 600px;
+    margin-top: 60px;
+    padding: 30px;
+}
+
+.firstPart h2 {
+    font-size: 4rem;
+}
+
+.firstPart span
+{
+    color: rgb(228, 153, 13);
+}
+
+.firstPart p 
+{
+    font-size: 15px;
+}
+
+button
+{
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 20px;
+    height: 50px;
+    color: white;
+    background: transparent;
+    border: 2px solid white;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+button:hover{
+    background-color: rgb(228, 153, 13);;
 }
