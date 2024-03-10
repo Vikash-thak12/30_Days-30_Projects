@@ -95,7 +95,9 @@ button
 }
 
 button:hover{
-    background-color: rgb(228, 153, 13);;
+    background-color: rgb(228, 153, 13);
+    transform: scale(1.1);
+    transition: .3s ease-in-out;
 }
 
 .coins 
