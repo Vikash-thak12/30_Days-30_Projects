@@ -8,4 +8,16 @@ function showToast(msg) {
     toast.classList.add('toast');
     toast.innerHTML = msg;
     toastbox.appendChild(toast);
+
+    if(msg.includes('Error')) {
+        toast.classList.add('error');
+    }
+
+    if(msg.includes('valid')) {
+        toast.classList.add('valid')
+    }
+
+    // setTimeout( () => {
+    //     toast.remove();
+    // },3000)
 }

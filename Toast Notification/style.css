@@ -44,20 +44,79 @@ body
     /* border-radius: 10px; */
     /* box-shadow: 0 0 20px rgb(0,0,0,0.3); */
     overflow: hidden;
+    padding: 20px;
     cursor: pointer;
 }
 
 .toast
 {
     padding: 10px;
-    width: 350px;
+    width: 400px;
     height: 60px;
     font-weight: bold;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     margin: 15px 0;
     background: #fff;
-    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
     display: flex;
     align-items: center;
-    border-radius: 10px;
+    /* border-top-right-radius: 10px;
+    border-top-left-radius: 10px; */
+    position: relative;
+    transform: translateX(100%);
+    animation: animate .4s linear forwards;
+}
+
+@keyframes animate 
+{
+    100% 
+    {
+        transform: translateX(0);
+    }
+}
+
+.toast i
+{
+    margin: 0 10px;
+    color: green;
+}
+
+.error i
+{
+    color: red;
+}
+
+.valid i 
+{
+    color: orange;
+}
+
+.toast::after
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: green;
+    animation: anime 3s linear forwards;
+
+}
+
+.toast.error::after
+{
+    background-color: red;
+}
+
+.toast.valid::after
+{
+    background-color: orange;
+}
+
+@keyframes anime {
+    100% 
+    {
+        width: 0;
+    }
 }
