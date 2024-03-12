@@ -1,0 +1,29 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.buttons
+{
+    margin: 50px;
+    gap: 10px;
+}
+
+.buttons button
+{
+    width: 120px;
+    height: 40px;
+    background: linear-gradient(45deg, #08001f, #30197d);
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.3rem;
+    /* padding: 10px 0; */
+    border-radius: 10px;
+    margin: 0 10px;
+}
