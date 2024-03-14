@@ -17,7 +17,7 @@ function showToast(msg) {
         toast.classList.add('valid')
     }
 
-    // setTimeout( () => {
-    //     toast.remove();
-    // },3000)
+    setTimeout( () => {
+        toast.remove();
+    },3000)
 }
