@@ -1,0 +1,22 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #263f3e;
+    min-height: 100vh;
+}
+
+#clock
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
