@@ -10,13 +10,42 @@ body
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #263f3e;
+    background-color: #2f363e;
     min-height: 100vh;
 }
 
 #clock
 {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 80px;
 }
+
+#hrdots,
+#mindots,
+#secdots 
+{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    /* border: 1px solid white; */
+    border-radius: 50%;
+}
+
+
+#hrdots::before,
+#mindots::before,
+#secdots::before
+{
+    content: '';
+    position: absolute;
+    inset: -20px;
+    border-radius: 50%;
+    box-shadow: 25px 25px 75px rgba(0,0,0,0.25),
+    10px 10px 70px rgba(0,0,0,0.25),
+    inset 5px 5px 10px rgba(0,0,0,0.5),
+    inset 5px 5px 20px rgba(255,255,255,0.2),
+    inset -5px -5px 15px rgba(0,0,0,0.75);
+} 
