@@ -1,14 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');*
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
-{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Outfit;
 }
 
-body
-{
+body {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,8 +15,7 @@ body
     min-height: 100vh;
 }
 
-#clock
-{
+#clock {
     position: relative;
     display: flex;
     align-items: center;
@@ -27,35 +25,33 @@ body
 
 #hrdots,
 #mindots,
-#secdots 
-{
+#secdots {
     position: relative;
     width: 200px;
     height: 200px;
     /* border: 1px solid white; */
     border-radius: 50%;
+    rotate: 90deg;
 }
 
 
 #hrdots::before,
 #mindots::before,
-#secdots::before
-{
+#secdots::before {
     content: '';
     position: absolute;
     inset: -20px;
     border-radius: 50%;
-    box-shadow: 25px 25px 75px rgba(0,0,0,0.25),
-    10px 10px 70px rgba(0,0,0,0.25),
-    inset 5px 5px 10px rgba(0,0,0,0.5),
-    inset 5px 5px 20px rgba(255,255,255,0.2),
-    inset -5px -5px 15px rgba(0,0,0,0.75);
-} 
+    box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.25),
+        10px 10px 70px rgba(0, 0, 0, 0.25),
+        inset 5px 5px 10px rgba(0, 0, 0, 0.5),
+        inset 5px 5px 20px rgba(255, 255, 255, 0.2),
+        inset -5px -5px 15px rgba(0, 0, 0, 0.75);
+}
 
 #hrdots h2,
 #mindots h2,
-#secdots h2 
-{
+#secdots h2 {
     position: absolute;
     text-align: center;
     inset: 0;
@@ -63,15 +59,83 @@ body
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: var(---clr);
-    font-size: 4rem;
+    color: var(--clr);
+    font-size: 3rem;
+    transform: rotate(-90deg);
 }
 
 #hrdots span,
 #mindots span,
 #secdots span {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
-    
-} 
+
+}
+
+#secdots b {
+    position: absolute;
+    color: white;
+    display: inline-flex;
+    transform: rotate(-90deg) translate(-45px, 80px);
+}
+
+#secdots .dot,
+#mindots .dot,
+#hrdots .dot
+ {
+    position: absolute;
+    top: 50%;
+    width: 10px;
+    height: 3px;
+    background: var(--clr);
+    transform-origin: 100px;
+}
+
+#secdots .active.dot,
+#mindots .active.dot,
+#hrdots .active.dot
+{
+    background: var(--clr);
+    box-shadow: 0 0 10px var(--clr),
+        0 0 20px var(--clr),
+        0 0 30px var(--clr);
+}
+
+#secdots .active.dot~.dot,
+#mindots .active.dot~.dot,
+#hrdots .active.dot~.dot
+{
+    background: #555;
+}
+
+#secdots .dot:nth-child(5n + 5), 
+#mindots .dot:nth-child(5n + 5) {
+    width: 20px;
+}
+
+#hrdots .dot
+{
+    width: 20px;
+}
+#hrdots .dot::before
+{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 4px;
+    height: 4px;
+    border-radius: 4px;
+    background: var(--clr);
+    box-shadow: 1.5px 9px var(--clr),
+    4px 18px var(--clr),
+    7px 27px var(--clr);
+}
+
+#hrdots .dot.active ~ .dot::before {
+    background: #555;
+    box-shadow: 1.5px 9px #555,
+    4px 18px #555,
+    7px 27px #555;
+}
